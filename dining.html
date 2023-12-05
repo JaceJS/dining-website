@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Pendaftaran</title>
+    <style>        
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+        body{
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to bottom, #3498db, #191970);        
+        }
+    </style>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center my-3" style="min-height: 100vh;">        
+        <div class="card shadow" style="max-width: 35rem; width: 25rem;">
+            <div class="card-body">
+                <form method="POST">
+                    <h2 class="mb-4 text-center">Registrasi Dining</h2>
+
+                    <div class="mb-3">
+                        <label for="nama" class="form-label">Nama</label>
+                        <input type="text" id="nama" name="nama" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="no_regis" class="form-label">No Regis</label>
+                        <input type="number" id="no_regis" name="no_regis" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Kata Sandi</label>
+                        <input type="password" id="password" name="password" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="konfirmasi_password" class="form-label">Konfirmasi Kata Sandi</label>
+                        <input type="password" id="konfirmasi_password" name="konfirmasi_password" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="tanggal_lahir" class="form-label">Tanggal hari ini</label>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir" class="form-control" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Jenis Kelamin</label>
+                        <div class="form-check">
+                            <input type="radio" id="laki_laki" name="jenis_kelamin" value="laki-laki" class="form-check-input" checked>
+                            <label for="laki_laki" class="form-check-label">Laki-laki</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" id="perempuan" name="jenis_kelamin" value="perempuan" class="form-check-input">
+                            <label for="perempuan" class="form-check-label">Perempuan</label>
+                        </div>
+                    </div>
+
+                    <div class="my-2 text-center">
+                        <a class="btn btn-danger" href="index.html">Kembali</a>
+                        <a href="success.html" type="submit" class="btn btn-success">Daftar</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
